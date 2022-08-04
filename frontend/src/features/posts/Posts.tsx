@@ -34,9 +34,8 @@ function Posts() {
   if (status !== Statuses.UpToDate) {
     contents = <div>{status}</div>
   } else {
-      contents = <div className="card">
-        <div className="card-body">
-            <h3>{status}</h3>
+      contents = <div>
+        <div className="container-fluid">
             <PostForm />
             {posts && posts.length > 0 && posts.map(post => {
                 return <div key={post.id} style={{margin:"5em"}}>
@@ -53,7 +52,7 @@ function Posts() {
       </div>
   }
 
-  return <div><h1>Posts</h1>
+  return <div><h1>Blog Posts</h1>
         {contents}
   </div>
 }

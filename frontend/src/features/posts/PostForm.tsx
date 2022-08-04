@@ -25,23 +25,24 @@ function PostForm() {
   }
   
   return <div>
-    <h1>PostForm</h1>
     <form>
       <input
         type="text"
         className="form-control text-start"
         name="title"
+        placeholder = "Your Title..."
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         />
       <textarea
         className="form-control text-start"
         name="body"
+        placeholder='Your article...'
         value={body}
         onChange={(e) => setBody(e.target.value)}
         />
         <button
-          type="submit"
+          type="submit"  className="btn btn-danger"
           onClick={(e) => submitHandler(e)}>Submit</button>
     </form>
   </div>;
