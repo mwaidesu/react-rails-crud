@@ -1,20 +1,9 @@
-import React, {useEffect} from 'react'
-import { fetchPostsAsync } from './postSlice';
-import { useDispatch } from 'react-redux';
+import React from 'react'
 
 function Article() {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(fetchPostsAsync());
-  }, [dispatch])
-
-  // , 
   return (
-    <div>
-      Article
-    </div>
-  );
+    <div>Article</div>
+  )
 }
 
 export default Article
