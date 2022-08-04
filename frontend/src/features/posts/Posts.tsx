@@ -52,7 +52,7 @@ function Posts() {
       </div>
   }
 
-  return <div><h1>Blog Posts</h1>
+  return <div><h1 className= "text-center">Blog Posts</h1>
         {contents}
   </div>
 }

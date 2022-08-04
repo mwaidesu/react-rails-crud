@@ -42,7 +42,7 @@ function Post(props:any) {
                             type="submit"
                             className="form-control"
                             onClick={(e) => submitHandler(e)}>Submit</button>;
-  return <div>
+    return <div className= "card mx-5 p-5 shadow p-3 mb-5 bg-white rounded">
       <div className="row">
           <div className="col-8">
               {isEditing ? editableTitle : titleElement}
